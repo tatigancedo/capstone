@@ -1,4 +1,103 @@
-body {
-  font-family: monospace;
-  background-color: yellow;
+:root {
+  --black: #000;
+  --light-grey: #cdcdcd;
+  --font-sans-serif: 'Manrope', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-small-serif: 'Averia Serif Libre', serif;
+  --font-cursive: 'Playball', cursive;
 }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*------------ fonts and image ------------*/
+
+body {
+  font-family: var(--font-sans-serif);
+  color: var(--black);
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  color: var(--black);
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--font-serif);
+  color: var(--black);
+  font-size: 3rem;
+  margin: 0;
+}
+
+h3 {
+  font-family: var(--font-small-serif);
+  color: var(--black);
+  font-size: 1rem;
+}
+
+h4 {
+  font-family: var(--font-cursive);
+}
+
+li, a {
+  color: var(--black);
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*------------ navigation ------------*/
+
+.nav-bar {
+  background: var(--light-grey);
+}
+
+.nav-bar .container {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.nav-bar__logo a{
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+.nav-bar__list {
+  margin-bottom: 0px;
+}
+
+.nav-bar__item {
+  display: inline-block;
+  padding: 0 1rem;
+}
+
+.nav-bar__item--active a {
+  color: var(--orange);
+}
+
+
+/*------------ hook ------------*/

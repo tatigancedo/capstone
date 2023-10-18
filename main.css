@@ -36,6 +36,7 @@ h2 {
   font-family: var(--font-serif);
   color: var(--black);
   font-size: 3rem;
+  line-height: 3.5rem;
 }
 
 h3 {
@@ -99,3 +100,22 @@ img {
 }
 
 /*------------ hook ------------*/
+
+.hook__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  align-items: center;
+}
+
+.hook__heading {
+  display: flex;
+  justify-content: left;
+  padding-top: 40px;
+}
+
+.img-card__img {
+  border-radius: 1.25rem;
+  width: 100%;
+}

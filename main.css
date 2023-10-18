@@ -43,6 +43,7 @@ h3 {
   font-family: var(--font-small-serif);
   color: var(--black);
   font-size: 1rem;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -78,7 +79,6 @@ img {
 .nav-bar__logo {
   margin: auto;
 }
-
 
 .nav-bar__list {
   margin-bottom: 0px;
@@ -119,3 +119,45 @@ img {
   border-radius: 1.25rem;
   width: 100%;
 }
+
+/*------------ problem ------------*/
+
+.problem_container {
+  width: 100%;
+  position: relative;
+}
+
+.problem__heading {
+  background:#cdcdcd;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.answer__container {
+  background:#cdcdcd;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  align-items: center;
+}
+
+.answer__content {
+  padding-left: 40px;
+}
+
+.purpose__container {
+  background:#cdcdcd;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  align-items: center;
+}
+
+.purpose__content {
+  padding-right: 40px;
+}
+
+/*------------ research ------------*/

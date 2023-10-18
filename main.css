@@ -1,6 +1,7 @@
 :root {
   --black: #000;
-  --light-grey: #cdcdcd;
+  --grey: #cdcdcd;
+  --light-grey: #EDEDED; 
   --font-sans-serif: 'Manrope', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-small-serif: 'Averia Serif Libre', serif;
@@ -9,6 +10,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-padding-top: 90px;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -61,6 +63,7 @@ li, a {
 img {
   max-width: 100%;
   display: block;
+  border: 3px solid #000;
 }
 
 /*------------ navigation ------------*/
@@ -70,7 +73,7 @@ img {
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  background: var(--light-grey);
+  background: var(--grey);
   position: sticky;
   z-index: 1;
   width: 100%;
@@ -108,6 +111,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   align-items: center;
 }
 
@@ -115,6 +120,7 @@ img {
   display: flex;
   justify-content: left;
   padding-top: 40px;
+  padding-right: 40px;
 }
 
 .img-card__img {
@@ -130,14 +136,14 @@ img {
 }
 
 .problem__heading {
-  background:#cdcdcd;
+  background:var(--light-grey);
   text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .answer__container {
-  background:#cdcdcd;
+  background:var(--light-grey);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -150,7 +156,7 @@ img {
 }
 
 .purpose__container {
-  background:#cdcdcd;
+  background:var(--light-grey);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -177,9 +183,35 @@ img {
   justify-content: center;
 }
 
+.research__content p{
+  padding: 10px;
+}
+
 .research-card__img {
   border-radius: 1.25rem;
   width: 100%;
+  padding-bottom: 10px;
+
 }
 
 /*------------ process ------------*/
+
+.process__container {
+  background:var(--light-grey);
+  text-align: center;
+  padding: 40px 200px;
+}
+
+.process-card__container {
+  padding: 40px 0px;
+}
+
+.process-card__container p{
+  padding: 10px;
+}
+
+.process-card__img {
+  border-radius: 1.25rem;
+  width: 100%;
+  object-fit: cover;
+}

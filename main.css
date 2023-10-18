@@ -13,6 +13,10 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /*------------ fonts and image ------------*/
 
@@ -26,14 +30,12 @@ body {
 h1 {
   font-family: var(--font-serif);
   color: var(--black);
-  margin: 0;
 }
 
 h2 {
   font-family: var(--font-serif);
   color: var(--black);
   font-size: 3rem;
-  margin: 0;
 }
 
 h3 {
@@ -52,28 +54,19 @@ li, a {
   list-style: none;
 }
 
-.container {
-  max-width: 75rem;
-  margin: 0 auto;
-}
-
 img {
-  display: block;
   max-width: 100%;
+  display: block;
 }
 
 /*------------ navigation ------------*/
 
-.nav-bar {
-  background: var(--light-grey);
-}
-
-.nav-bar .container {
-  margin: auto;
+.nav-bar__container {
   display: flex;
   justify-content: space-between;
   list-style: none;
   align-items: center;
+  background: var(--light-grey);
   position: sticky;
   z-index: 1;
   width: 100%;
@@ -81,23 +74,28 @@ img {
   overflow: hidden;
 }
 
-.nav-bar__logo a{
-  font-size: 1.5rem;
-  color: var(--black);
+.nav-bar__logo {
+  margin: auto;
 }
+
 
 .nav-bar__list {
   margin-bottom: 0px;
+}
+
+.nav-bar__list--left {
+  padding-left: 1.2rem;
+  margin: 1.2rem 0;
+}
+
+.nav-bar__list--right {
+  padding-right: 1.2rem;
+  margin: 1.2rem 0;
 }
 
 .nav-bar__item {
   display: inline-block;
   padding: 0 1rem;
 }
-
-.nav-bar__item--active a {
-  color: var(--orange);
-}
-
 
 /*------------ hook ------------*/

@@ -238,3 +238,40 @@ p {
   height: 200px;
   width: 400px;
 }
+
+/*------------ solution ------------*/
+
+.solution__intro {
+  padding-bottom: 40px;
+}
+
+.solution__container {
+  background:var(--light-grey);
+  text-align: center;
+  padding: 40px 200px;
+}
+
+.solution__content {
+  display: flex;
+  column-gap: 1.5rem;
+  padding: 10px;
+  justify-content: center;
+}
+
+.solution-card__img {
+  height: 500px;
+  border-radius: 1.25rem;
+}
+
+.button {
+  background-color: var(--black);
+  border: none;
+  color: var(--light-grey);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: .5rem;
+}

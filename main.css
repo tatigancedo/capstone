@@ -66,6 +66,10 @@ img {
   border: 3px solid #000;
 }
 
+p {
+  padding-top: 10px;
+}
+
 /*------------ navigation ------------*/
 
 .nav-bar__container {
@@ -183,10 +187,6 @@ img {
   justify-content: center;
 }
 
-.research__content p{
-  padding: 10px;
-}
-
 .research-card__img {
   border-radius: 1.25rem;
   width: 100%;
@@ -206,12 +206,35 @@ img {
   padding: 40px 0px;
 }
 
-.process-card__container p{
-  padding: 10px;
-}
-
 .process-card__img {
   border-radius: 1.25rem;
   width: 100%;
   object-fit: cover;
+}
+
+/*------------ feedback ------------*/
+
+.feedback__container {
+  text-align: center;
+  padding: 40px 200px;
+}
+
+.feedback__intro {
+  padding-bottom: 40px;
+}
+
+.feedback__content {
+  display: flex;
+  column-gap: 1.5rem;
+  padding: 10px;
+  justify-content: center;
+}
+
+.feedback-card__container {
+  border-radius: 1.25rem;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--light-grey);
+  height: 200px;
+  width: 400px;
 }

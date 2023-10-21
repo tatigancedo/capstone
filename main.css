@@ -62,7 +62,7 @@ h4 { /*intro text*/
 }
 
 li, a {
-  color: var(--black);
+  color: var(--cream);
   text-decoration: none;
   list-style: none;
 }
@@ -70,12 +70,16 @@ li, a {
 img {
   max-width: 100%;
   display: block;
-  border: 3px solid #000;
   border-radius: 1.25rem;
+  border: 3px solid #000;
 }
 
 p {
   padding-top: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*------------ navigation ------------*/
@@ -83,7 +87,6 @@ p {
 .nav-bar__container {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   align-items: center;
   background: var(--teal);
   position: sticky;
@@ -93,8 +96,19 @@ p {
   overflow: hidden;
 }
 
-.nav-bar__logo {
+.nav-bar__container .wordmark {
   margin: auto;
+}
+
+.nav-bar__container .wordmark {
+  border: 0px;
+  width: 100%; 
+  height: auto;
+}
+
+
+.nav-bar__container a {
+  color: var(--cream);
 }
 
 .nav-bar__list {
@@ -114,10 +128,6 @@ p {
 .nav-bar__item {
   display: inline-block;
   padding: 0 1rem;
-}
-
-.nav-bar__container a {
-  color: var(--cream);
 }
 
 /*------------ hook ------------*/

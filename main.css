@@ -2,6 +2,9 @@
   --black: #000;
   --grey: #cdcdcd;
   --light-grey: #EDEDED; 
+  --cream: #FAF7EE;
+  --teal: #006D74;
+  --pink: #FFD2DD;
   --font-sans-serif: 'Manrope', sans-serif;
   --font-serif: 'Playfair Display', serif;
   --font-small-serif: 'Averia Serif Libre', serif;
@@ -11,6 +14,7 @@
 html {
   box-sizing: border-box;
   scroll-padding-top: 90px;
+  background: var(--cream);
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -24,28 +28,28 @@ html {
 
 body {
   font-family: var(--font-sans-serif);
-  color: var(--black);
+  color: var(--teal);
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 h1 { /*section headings and wordmark*/
   font-family: var(--font-serif);
-  color: var(--black);
+  color: var(--teal);
   font-size: 1.8rem;
   line-height: 2rem;
 }
 
 h2 { /*large heading*/
   font-family: var(--font-serif);
-  color: var(--black);
+  color: var(--teal);
   font-size: 3rem;
   line-height: 3.8rem;
 }
 
 h3 { /*small caps*/
   font-family: var(--font-small-serif);
-  color: var(--black);
+  color: var(--teal);
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -81,7 +85,7 @@ p {
   justify-content: space-between;
   list-style: none;
   align-items: center;
-  background: var(--grey);
+  background: var(--teal);
   position: sticky;
   z-index: 1;
   width: 100%;
@@ -110,6 +114,10 @@ p {
 .nav-bar__item {
   display: inline-block;
   padding: 0 1rem;
+}
+
+.nav-bar__container a {
+  color: var(--cream);
 }
 
 /*------------ hook ------------*/
@@ -146,13 +154,13 @@ p {
 }
 
 .problem__intro {
-  background:var(--light-grey);
+  background:var(--pink);
   text-align: center;
   padding: 40px 40px;
 }
 
 .answer__container {
-  background:var(--light-grey);
+  background:var(--pink);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -166,7 +174,7 @@ p {
 }
 
 .purpose__container {
-  background:var(--light-grey);
+  background:var(--pink);
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -200,7 +208,7 @@ p {
 /*------------ process ------------*/
 
 .process__container {
-  background:var(--light-grey);
+  background:var(--pink);
   text-align: center;
   padding: 40px 200px;
 }
@@ -245,7 +253,7 @@ p {
 /*------------ solution ------------*/
 
 .solution__container {
-  background:var(--light-grey);
+  background:var(--pink);
   text-align: center;
   padding: 40px 220px;
 }
@@ -258,12 +266,12 @@ p {
 }
 
 .button {
-  background-color: var(--black);
+  background-color: var(--teal);
   border: none;
-  color: var(--light-grey);
-  padding: 10px 20px;
+  color: var(--cream);
+  padding: 20px 40px;
   text-align: center;
-  text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
   margin: 20px 2px;
   cursor: pointer;

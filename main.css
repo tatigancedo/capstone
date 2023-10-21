@@ -29,29 +29,32 @@ body {
   line-height: 1.5rem;
 }
 
-h1 {
+h1 { /*section headings and wordmark*/
   font-family: var(--font-serif);
   color: var(--black);
   font-size: 1.8rem;
   line-height: 2rem;
 }
 
-h2 {
+h2 { /*large heading*/
   font-family: var(--font-serif);
   color: var(--black);
   font-size: 3rem;
   line-height: 3.8rem;
 }
 
-h3 {
+h3 { /*small caps*/
   font-family: var(--font-small-serif);
   color: var(--black);
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-h4 {
-  font-family: var(--font-cursive);
+h4 { /*intro text*/
+  font-family: var(--font-sans-serif);
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-top: 10px;
 }
 
 li, a {
@@ -64,6 +67,7 @@ img {
   max-width: 100%;
   display: block;
   border: 3px solid #000;
+  border-radius: 1.25rem;
 }
 
 p {
@@ -130,6 +134,8 @@ p {
 .img-card__img {
   border-radius: 1.25rem;
   width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /*------------ problem ------------*/
@@ -139,11 +145,10 @@ p {
   position: relative;
 }
 
-.problem__heading {
+.problem__intro {
   background:var(--light-grey);
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 40px;
 }
 
 .answer__container {
@@ -157,6 +162,7 @@ p {
 
 .answer__content {
   padding-left: 40px;
+  width: 80%;
 }
 
 .purpose__container {
@@ -170,28 +176,25 @@ p {
 
 .purpose__content {
   padding-right: 40px;
+  width: 80%;
 }
 
 /*------------ research ------------*/
 
 .research__container {
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 200px; /*top and bottom is 40 and 200 is right and left */
 }
 
 .research__content {
   display: flex;
   column-gap: 1.5rem;
-  padding: 40px;
+  padding: 20px;
   justify-content: center;
 }
 
-.research-card__img {
-  border-radius: 1.25rem;
-  width: 100%;
-  padding-bottom: 10px;
-
+.research__intro {
+  padding-bottom: 20px;
 }
 
 /*------------ process ------------*/
@@ -241,26 +244,17 @@ p {
 
 /*------------ solution ------------*/
 
-.solution__intro {
-  padding-bottom: 40px;
-}
-
 .solution__container {
   background:var(--light-grey);
   text-align: center;
-  padding: 40px 200px;
+  padding: 40px 220px;
 }
 
 .solution__content {
   display: flex;
   column-gap: 1.5rem;
-  padding: 10px;
   justify-content: center;
-}
-
-.solution-card__img {
-  height: 500px;
-  border-radius: 1.25rem;
+  padding-top: 40px;
 }
 
 .button {
@@ -271,7 +265,7 @@ p {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 20px 2px;
   cursor: pointer;
   border-radius: .5rem;
 }

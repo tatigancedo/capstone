@@ -16,9 +16,11 @@ html {
   scroll-padding-top: 90px;
   background: var(--cream);
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -130,6 +132,27 @@ a:hover {
   padding: 0 1rem;
 }
 
+@media screen and (max-width: 700px) {
+  .nav-bar__container {
+    display: block;
+    justify-content: center;
+  }
+
+  .nav-bar__list--left {
+    margin: auto;
+    padding: 20px;
+  }
+
+  .nav-bar__list--right {
+    display: none;
+  }
+
+  .wordmark {
+    padding: 1rem;
+  }
+
+}
+
 /*------------ hook ------------*/
 
 .hook__container {
@@ -147,6 +170,21 @@ a:hover {
   justify-content: left;
   padding-top: 40px;
   padding-right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .hook__container{
+    display: block;
+    padding: 40px;
+    margin: 0px;
+  }
+
+  .hook__heading {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
 }
 
 /*------------ problem ------------*/
@@ -190,6 +228,30 @@ a:hover {
   width: 80%;
 }
 
+@media screen and (max-width: 700px) {
+  .problem__intro {
+    padding-bottom: 0px;
+  }
+
+  .answer__container, .purpose__container {
+    display: block;
+  }
+
+  .answer__content {
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .purpose__content {
+    text-align: center;
+    padding: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
 /*------------ research ------------*/
 
 .research__container {
@@ -208,6 +270,25 @@ a:hover {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 700px) {
+  .research__container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .research__content {
+    display: block;
+    padding: 20px;
+    justify-content: center;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+
+  .research__content p {
+    padding: 20px;
+  }
+}
+
 /*------------ process ------------*/
 
 .process__container {
@@ -224,6 +305,17 @@ a:hover {
   border-radius: 1.25rem;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+  .process__container {
+    display: block;
+    padding: 40px;
+  }
+
+  .process-card__container {
+    padding-bottom: 0px;
+  }
 }
 
 /*------------ feedback ------------*/
@@ -251,6 +343,17 @@ a:hover {
   background-color: var(--light-grey);
   height: 200px;
   width: 400px;
+}
+
+@media screen and (max-width: 700px) {
+  .feedback__container {
+    display: block;
+    padding: 40px;
+  }
+
+  .feedback__content {
+    justify-content: center;
+  }
 }
 
 /*------------ solution ------------*/
@@ -281,6 +384,18 @@ a:hover {
   border-radius: .5rem;
 }
 
+@media screen and (max-width: 700px) {
+  .solution__container {
+    display: block;
+    padding: 40px;
+  }
+  .solution__content {
+    display: block;
+    padding: 20px;
+  }
+}
+
+
 /*------------ summary ------------*/
 
 .summary__container {
@@ -297,6 +412,18 @@ a:hover {
   display: block;
   padding-right: 40px;
   align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .summary__container {
+    display: block;
+    padding: 40px;
+  }
+  .summary__heading {
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 20px;
+  }
 }
 
 /*------------ footer ------------*/
@@ -320,11 +447,24 @@ p.footer__copyright {
 }
 
 .footer__links {
-  margin: 0;
   display: flex;
 }
 
 .footer__links a {
   color: var(--cream);
   padding-right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .footer__container .container {
+    justify-content: space-between;
+  }
+
+  .footer__container {
+    padding: 20px;
+  }
+
+  p.footer__copyright {
+    display: none;
+  }
 }

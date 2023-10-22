@@ -457,7 +457,7 @@ p.footer__copyright {
 
 @media screen and (max-width: 700px) {
   .footer__container .container {
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .footer__container {

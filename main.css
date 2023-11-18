@@ -113,7 +113,6 @@ a:hover {
   height: auto;
 }
 
-
 .nav-bar__container a {
   color: var(--cream);
 }
@@ -344,10 +343,10 @@ a:hover {
 
 .feedback-card__container {
   border-radius: 1.25rem;
-  padding: 10px;
+  padding: 40px;
   text-align: center;
-  background-color: var(--light-grey);
-  height: 200px;
+  font-family: var(--font-small-serif);
+  background-color: var(--pink);
   width: 400px;
 }
 
@@ -416,7 +415,8 @@ a:hover {
 
 .summary__heading {
   display: block;
-  padding-right: 40px;
+  padding-right: 80px;
+  justify-content: left;
   align-items: center;
 }
 

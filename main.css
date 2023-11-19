@@ -217,6 +217,12 @@ a:hover {
 .answer__content {
   padding-left: 40px;
   width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+}
+
+.img__caption {
+  display: block;
 }
 
 .purpose__container {
@@ -231,6 +237,8 @@ a:hover {
 .purpose__content {
   padding-right: 40px;
   width: 80%;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -273,6 +281,12 @@ a:hover {
 
 .research__intro {
   padding-bottom: 20px;
+}
+
+.research__conclusion {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding-top: 40px;
 }
 
 @media screen and (max-width: 700px) {

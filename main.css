@@ -390,6 +390,21 @@ a:hover {
   padding-top: 40px;
 }
 
+a[href="https://miamifoundation.org/"] {
+  color:#006D74;
+  text-decoration: underline;
+}
+
+a[href="https://womensfundmiami.org/"] {
+  color:#006D74;
+  text-decoration: underline;
+}
+
+a[href="https://dadeheritagetrust.org/"] {
+  color:#006D74;
+  text-decoration: underline;
+}
+
 .button {
   background-color: var(--teal);
   border: none;
